@@ -1,0 +1,56 @@
+﻿@using DAL.Entities
+@model Web.Models.DoctorViewModel
+
+@{
+    ViewBag.Title = "DoctorsVisits";
+}
+
+<h2>Planned visits</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            N
+        </td>
+        <td>
+            Time
+        </td>
+        <td>
+        </td>
+    </tr>
+    @{
+        int i = 1;
+
+    }
+    @foreach (Visit item in Model.Visits)
+    {
+        <tr>
+            <td>
+                @i
+            </td>
+
+            <td>
+                @item.VisitTime
+            </td>
+            <td>
+            </td>
+        </tr>
+        i++;
+    }
+</table>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x => x.connectedSpecializations)
+    @Html.HiddenFor(x => x.Doctor)
+    @Html.HiddenFor(x => x.Visits)
+    <br />
+    <p>Your name: @Html.TextBoxFor(x => x.PatientName)</p>
+    <p>Your surname: @Html.TextBoxFor(x => x.PatientSurname)</p>
+    <br />
+    <p>
+        Enter date and time you wish plan a visit
+    </p>
+    @Html.TextAreaFor(x => x.DateBuffer)
+    <input type="submit" value="Plan"/>
+
+}

@@ -1,0 +1,52 @@
+﻿@using DAL.Entities
+@model Web.Models.DoctorViewModel
+
+@{
+    ViewBag.Title = "All Doctors";
+}
+
+<h2>List of all doctors:</h2>
+<table class="table">
+    <tr>
+        <td>
+            N
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Surname
+        </td>
+        <td>
+            Specialization
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    @{
+        int i = 0;
+
+    }
+    @foreach (Doctor doctor in Model.Doctor)
+    {
+        <tr>
+            <td>
+                @doctor.DoctorId
+            </td>
+            <td>
+                @doctor.Name
+            </td>
+            <td>
+                @doctor.Surname
+            </td>
+            <td>
+                @Model.connectedSpecializations[i]
+            </td>
+            <td>
+                @Html.ActionLink("Click here", "DoctorsVisits", new { id = doctor.DoctorId})
+            </td>
+        </tr>
+        i++;
+    }
+</table>

@@ -1,0 +1,39 @@
+﻿@using DAL.Entities
+@model Web.Models.PatientViewModel
+@{
+    ViewBag.Title = "Diagnosis";
+}
+
+<h2>Patient`s diagnosises</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            N
+        </td>
+        <td>
+            Diagnosis
+        </td>
+        <td>
+        </td>
+    </tr>
+    @{
+        int i = 1;
+
+    }
+    @foreach (VisitResult item in Model.Diagnosises)
+    {
+        <tr>
+            <td>
+                @i
+            </td>
+
+            <td>
+                @item.Diagnosis
+            </td>
+            <td>
+            </td>
+        </tr>
+        i++;
+    }
+</table>

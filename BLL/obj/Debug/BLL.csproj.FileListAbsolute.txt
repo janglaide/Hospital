@@ -1,0 +1,16 @@
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\DB\HospitalDatabase.mdf
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\DB\HospitalDatabase_log.ldf
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\BLL.dll.config
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\BLL.dll
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\BLL.pdb
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\DAL.dll
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\DAL.pdb
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\DAL.dll.config
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\obj\Debug\BLL.dll
+C:\Users\Alisa\Desktop\lessons\5 sem\trpz_c#\Hospital\BLL\obj\Debug\BLL.pdb

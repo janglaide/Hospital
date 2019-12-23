@@ -1,0 +1,60 @@
+﻿@using DAL.Entities
+@model Web.Models.VisitsViewModel
+@{
+    ViewBag.Title = "Home Page - All visits";
+}
+
+<h2>List of all visits:</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            N
+        </td>
+        <td>
+            Patient`s name
+        </td>
+        <td>
+            Patient`s surname
+        </td>
+        <td>
+            Doctor`s name
+        </td>
+        <td>
+            Doctor`s surname
+        </td>
+        <td>
+            Visit date and time
+        </td>
+    </tr>
+    @{
+        int i = 0;
+
+    }
+    @foreach (Visit item in Model.Visits)
+    {
+        <tr>
+            <td>
+                @item.VisitId
+            </td>
+            <td>
+                @Model.PatientName[i]
+            </td>
+            <td>
+                @Model.PatientSurname[i]
+            </td>
+            <td>
+                @Model.DoctorName[i]
+            </td>
+            <td>
+                @Model.DoctorSurname[i]
+            </td>
+            <td>
+                @item.VisitTime
+            </td>
+        </tr>
+        i++;
+    }
+</table>
+
+@Html.ActionLink("Plan a visit", "Index", "Doctor")
